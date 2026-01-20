@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PCManager</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div id="loader">
+  <div class="spinner"></div>
+  <p id="loader-text">Loading Website...</p>
+</div>
+
+<!-- Particle Canvas -->
+<canvas id="particles"></canvas>
+
+<header>
+  <nav>
+    <h2>PCManager</h2>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#download">Download</a>
+      <a href="#status">Status</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content" class="hidden">
+
+  <!-- Gamer Animation -->
+  <section class="gamer-intro">
+    <div class="gamer"></div>
+    <div class="pc"></div>
+  </section>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Next-Gen PC Optimization</h1>
+    <p>Built for gamers. Designed for performance.</p>
+
+    <div class="badges">
+      <span class="badge windows">Windows Only</span>
+      <span class="badge api">
+        Service:
+        <span id="api-status" class="status checking">Checking...</span>
+      </span>
+    </div>
+
+    <button class="btn" onclick="download()">Download</button>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="features">
+    <div class="card">Built-in FPS Counter</div>
+    <div class="card">Background Service Optimization</div>
+    <div class="card">Launcher + Installer</div>
+    <div class="card">Gaming-Focused Performance</div>
+  </section>
+
+  <!-- Status -->
+  <section id="status" class="status-section">
+    <h2>System Status</h2>
+    <p id="status-text">All systems operational.</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 PCManager • Windows Platform</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
