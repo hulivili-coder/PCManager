@@ -2,111 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PC Manager</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<header>
-  <div class="logo">PC<span>Manager</span></div>
+<!-- PARTICLE BACKGROUND -->
+<canvas id="particles"></canvas>
+
+<!-- NAV -->
+<header class="navbar">
+  <div class="logo">PC Manager</div>
   <nav>
-    <a href="#home">Home</a>
     <a href="#features">Features</a>
     <a href="#download">Download</a>
-    <a href="#terms">Terms</a>
-    <a href="#privacy">Privacy</a>
   </nav>
 </header>
 
 <!-- HERO -->
-<section id="home" class="hero cyber-section">
-  <h1>CONTROL YOUR PC</h1>
-  <p>Performance. Monitoring. FPS Counter. One Manager.</p>
-  <a href="#download" class="download-btn">DOWNLOAD</a>
+<section class="hero">
+  <h1>Ultimate PC Management</h1>
+  <p>Monitor. Optimize. Control.</p>
+
+  <div class="badge">Windows Only</div>
+
+  <a href="#download" class="primary-btn">Get Started</a>
 </section>
 
 <!-- FEATURES -->
-<section id="features" class="features cyber-section">
+<section id="features" class="features">
   <h2>Features</h2>
 
   <div class="feature-grid">
-    <div class="feature-card">
-      <h3>FPS Counter</h3>
-      <p>Built-in high-performance FPS counter for games.</p>
-    </div>
-
-    <div class="feature-card">
-      <h3>System Monitor</h3>
-      <p>CPU, RAM, OS info displayed instantly.</p>
-    </div>
-
-    <div class="feature-card">
-      <h3>Background Service</h3>
-      <p>Runs silently for maximum efficiency.</p>
-    </div>
-
-    <div class="feature-card">
-      <h3>Auto Start</h3>
-      <p>Launches with Windows when enabled.</p>
-    </div>
+    <div class="feature">⚡ Real-time FPS Counter</div>
+    <div class="feature">🖥 System Monitoring</div>
+    <div class="feature">🔧 Background Service</div>
+    <div class="feature">🎮 Gamer Focused</div>
   </div>
 </section>
 
 <!-- DOWNLOAD -->
-<section id="download" class="download cyber-section">
+<section id="download" class="download">
   <h2>Download PC Manager</h2>
-  <p>Get the latest release from GitHub.</p>
 
-  <a 
-    class="download-btn big"
-    href="https://github.com/hulivili-coder/PCManager/releases"
-    target="_blank">
-    GO TO RELEASES
+  <a id="downloadBtn" class="download-btn">
+    <div class="spinner" id="spinner"></div>
+    <div class="btn-text">
+      <span class="title">Fetching latest release...</span>
+      <span class="sub" id="releaseText">Please wait</span>
+    </div>
   </a>
 </section>
 
-<!-- TERMS -->
-<section id="terms" class="legal cyber-section">
-  <h2>Terms of Service</h2>
-
-  <p>
-    By downloading or using PC Manager, you agree to use the software
-    responsibly and legally.
-  </p>
-
-  <p>
-    PC Manager is provided "as is" without warranties.
-    We are not responsible for system damage caused by misuse.
-  </p>
-
-  <p>
-    Redistribution, reverse engineering, or modification without
-    permission is not allowed.
-  </p>
-</section>
-
-<!-- PRIVACY -->
-<section id="privacy" class="legal cyber-section">
-  <h2>Privacy Policy</h2>
-
-  <p>
-    PC Manager does not collect personal data.
-  </p>
-
-  <p>
-    The application runs entirely locally.
-    No telemetry, analytics, or tracking is used.
-  </p>
-
-  <p>
-    Your system. Your data.
-  </p>
-</section>
-
 <footer>
-  <p>© 2026 PC Manager. All rights reserved.</p>
+  <p>© 2026 PC Manager • Windows Application</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
