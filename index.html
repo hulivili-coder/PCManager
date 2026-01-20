@@ -5,61 +5,71 @@
   <title>PC Manager</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Particles -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 <body>
 
 <!-- PARTICLE BACKGROUND -->
-<canvas id="particles"></canvas>
+<div id="particles-js"></div>
+
+<!-- LOADING OVERLAY -->
+<div id="loading">
+  <div class="spinner"></div>
+  <p>Fetching latest release…</p>
+</div>
 
 <!-- NAV -->
-<header class="navbar">
-  <div class="logo">PC Manager</div>
-  <nav>
+<nav>
+  <h1>PC Manager</h1>
+  <div class="nav-links">
+    <a href="#home">Home</a>
     <a href="#features">Features</a>
     <a href="#download">Download</a>
-  </nav>
-</header>
+  </div>
+</nav>
 
 <!-- HERO -->
-<section class="hero">
-  <h1>Ultimate PC Management</h1>
-  <p>Monitor. Optimize. Control.</p>
+<section id="home" class="section hero">
+  <h2>Next-Gen PC Control</h2>
+  <p>Monitor • Optimize • Game Smarter</p>
 
-  <div class="badge">Windows Only</div>
+  <div class="badges">
+    <span class="badge windows">Windows Only</span>
+  </div>
 
-  <a href="#download" class="primary-btn">Get Started</a>
+  <a id="download-btn" class="download disabled">
+    <span id="download-text">Checking availability…</span>
+  </a>
 </section>
 
 <!-- FEATURES -->
-<section id="features" class="features">
+<section id="features" class="section">
   <h2>Features</h2>
 
-  <div class="feature-grid">
-    <div class="feature">⚡ Real-time FPS Counter</div>
-    <div class="feature">🖥 System Monitoring</div>
-    <div class="feature">🔧 Background Service</div>
-    <div class="feature">🎮 Gamer Focused</div>
+  <div class="features">
+    <div class="card">🔥 Real-Time CPU & RAM Stats</div>
+    <div class="card">🎮 Built-in FPS Counter</div>
+    <div class="card">🛡 Background Windows Service</div>
+    <div class="card">⚡ Lightweight & Fast</div>
   </div>
 </section>
 
 <!-- DOWNLOAD -->
-<section id="download" class="download">
-  <h2>Download PC Manager</h2>
-
-  <a id="downloadBtn" class="download-btn">
-    <div class="spinner" id="spinner"></div>
-    <div class="btn-text">
-      <span class="title">Fetching latest release...</span>
-      <span class="sub" id="releaseText">Please wait</span>
-    </div>
-  </a>
+<section id="download" class="section">
+  <h2>Get PC Manager</h2>
+  <p>Always fetches the latest stable release.</p>
 </section>
 
 <footer>
-  <p>© 2026 PC Manager • Windows Application</p>
+  <p>© 2026 PC Manager — All rights reserved</p>
 </footer>
 
+<!-- Scripts -->
 <script src="script.js"></script>
+
 </body>
 </html>
