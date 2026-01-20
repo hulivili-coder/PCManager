@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PCManager</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- LOADING SCREEN -->
+<div id="loader">
+  <div class="spinner"></div>
+  <p id="loaderText">Loading Website...</p>
+</div>
+
+<!-- PARTICLE BACKGROUND -->
+<canvas id="particles"></canvas>
+
+<header>
+  <h1>PCManager</h1>
+  <p>The next-gen Windows performance manager</p>
+
+  <div class="theme-toggle">
+    🌙
+    <label class="switch">
+      <input type="checkbox" id="themeSwitch">
+      <span class="slider"></span>
+    </label>
+    ☀️
+  </div>
+
+  <div class="buttons">
+    <a href="#features">Features</a>
+    <a href="#download">Download</a>
+    <a href="#legal">Legal</a>
+  </div>
+</header>
+
+<section class="hero">
+  <h2>Control Your PC. Dominate Performance.</h2>
+  <p>Live system stats, FPS counter, background services, launcher & installer.</p>
+  <span class="badge">Windows Only</span>
+</section>
+
+<section id="features">
+  <h2>Features</h2>
+
+  <div class="cards">
+    <div class="card">⚡ Live CPU / RAM Info</div>
+    <div class="card">🎮 Built-in FPS Counter</div>
+    <div class="card">🛠 Background Service Control</div>
+    <div class="card">🚀 Smart Launcher System</div>
+    <div class="card">🔒 Admin-safe & Secure</div>
+    <div class="card">🌙 Dark / Light Mode</div>
+  </div>
+</section>
+
+<section id="download">
+  <h2>Download</h2>
+  <p>Latest stable release from GitHub</p>
+
+  <a class="download-btn"
+     href="https://github.com/hulivili-coder/PCManager/releases/latest/download/PCManagerSetup.exe">
+     Download Installer
+  </a>
+
+  <div class="api-status">
+    API Status: <span id="apiStatus">Checking...</span>
+  </div>
+</section>
+
+<section id="legal">
+  <h2>Terms of Service</h2>
+  <p>
+    PCManager is provided "as-is". We are not responsible for damage caused by misuse,
+    system modification, or third-party software conflicts.
+  </p>
+
+  <h2>Privacy Policy</h2>
+  <p>
+    PCManager does NOT collect personal data, telemetry, or usage analytics.
+    All system data remains local on your machine.
+  </p>
+
+  <p class="final-line">
+    You're welcome to join our application army.
+  </p>
+</section>
+
+<footer>
+  © 2026 PCManager. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
